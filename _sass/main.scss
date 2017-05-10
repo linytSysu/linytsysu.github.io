@@ -1,0 +1,127 @@
+.highlight {
+  margin: 20px 0;
+}
+
+article .divider {
+  background: #ddd;
+  background: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,0)),color-stop(#ccc),to(rgba(255,255,255,0)));
+  background: -webkit-linear-gradient(left,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
+  background: linear-gradient(to right,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
+  height: 1px;
+  margin: 2em 0;
+}
+
+article > header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header__title {
+    font-size: 1.6em;
+    text-align: center;
+  }
+
+  .header__time {
+    color: #5e5e5e;
+  }
+}
+
+.header {
+  max-width: 600px;
+  margin: 0 auto 25px auto;
+  display: flex;
+  flex-direction: row;
+
+  .header__title {
+    font-family: 'Cormorant Upright', serif;
+    a {
+      text-decoration: none;
+      border: none;
+    }
+  }
+
+  .header__nav {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav__list {
+    display: flex;
+    max-width: 400px;
+    padding: 0;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nav__list-item {
+    list-style: none;
+  }
+
+  .nav__list-link {
+    font-family: "PT Serif", serif;
+    color: inherit;
+    text-decoration: none;
+    border: none;
+  }
+
+  .nav__list-link:hover {
+    border-bottom: 1px solid #000;
+  }
+}
+
+.footer {
+  max-width: 600px;
+  margin: 60px auto 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > p {
+    margin: 0;
+    color: #999;
+    font-size: 14px;
+
+     > a {
+       border-bottom: none;
+       color: #069;
+     }
+  }
+}
+
+.home, .post, .page {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.paginator {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  a {
+    border-bottom: none;
+  }
+  .page-num {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.post__entry {
+  margin-bottom: 40px;
+  h4 {
+    margin-bottom: 10px;
+  }
+  a {
+    text-decoration: none;
+    border: none;
+  }
+  > time {
+    font-size: 14px;
+    color: #5e5e5e;
+  }
+  p {
+    margin-top: 10px;
+  }
+}

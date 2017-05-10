@@ -1,0 +1,15 @@
+<header class="header">
+    <h1 class="header__title">
+        <a href="/">{{ site.title }}</a>
+    </h1>
+
+    <nav class="header__nav">
+        <ul class="nav__list">
+            {% for link in site.data.nav.main %}
+                <li class="nav__list-item">
+                    <a class="nav__list-link" href="{{ link.url }}">{{ link.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>

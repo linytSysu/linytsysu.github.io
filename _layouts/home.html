@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<div class="home">
+
+    {{ content }}
+
+    {% for post in site.posts %}
+        {% include post-entry.html %}
+    {% endfor %}
+
+</div>
