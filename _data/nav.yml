@@ -1,1 +1,9 @@
 main:
+  - title: "Archive"
+    url: "/archive"
+  - title: "Category"
+    url: "/category"
+  - title: "Tags"
+    url: "/tags"
+  - title: "About"
+    url: "/about"
