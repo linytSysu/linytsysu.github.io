@@ -9,11 +9,14 @@ repository: https://github.com/linytsysu/linytsysu.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+paginate: 7
+
 # Build settings
 markdown: kramdown
 
 gems:
   - jekyll-feed
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
