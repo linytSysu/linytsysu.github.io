@@ -14,3 +14,11 @@ layout: default
     {{ content }}
 
 </article>
+
+<div class="tags__container">
+    <div class="tag__list">
+        {% for tag in page.tags %}
+            <a class="tag__item" href="/tags#{{tag}}">{{tag}}</a>
+        {% endfor %}
+    </div>
+</div>
