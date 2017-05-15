@@ -102,16 +102,20 @@ article > header {
 .home, .post, .page {
   max-width: 600px;
   margin: 0 auto;
+}
+
+.home {
+  margin-top: 30px;
+  min-height: calc(100% - 250px);
+}
+
+.post, .page {
   min-height: calc(100% - 230px);
 }
 
 .tags__container {
   max-width: 600px;
   margin: 30px auto 0 auto;
-}
-
-.home {
-  margin-top: 30px;
 }
 
 .paginator {
