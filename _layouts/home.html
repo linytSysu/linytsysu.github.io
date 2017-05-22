@@ -6,9 +6,11 @@ layout: default
 
     {{ content }}
 
-    {% for post in paginator.posts %}
-        {% include post-entry.html %}
-    {% endfor %}
+    <div>
+        {% for post in paginator.posts %}
+            {% include post-entry.html %}
+        {% endfor %}
+    </div>
 
     {% include paginator.html %}
 
