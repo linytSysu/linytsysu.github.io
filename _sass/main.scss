@@ -29,7 +29,12 @@ article > header {
   margin: 0 auto;
   padding-top: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
+  .header-top {
+    display: flex;
+    flex-direction: row;
+  }
 
   .header__title {
     font-family: 'Cormorant Upright', serif;
@@ -79,10 +84,88 @@ article > header {
     width: 100%;
   }
 
+  .nav-column__list {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    transition: all ease .3s;
+  }
+
+  .nav-column__list.show {
+    opacity: 1;
+    height: 160px;
+  }
+
+  .nav-column__list-item {
+    display: flex;
+    list-style: none;
+  }
+
+  .nav-column__list-link {
+    display: flex;
+    flex: 1;
+    height: 40px;
+    padding-left: 5px;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: 0;
+  }
+
+  .nav-column__list-link:hover {
+    background-color: #f5f5f5;
+  }
+
   .menu-bar {
     display: none;
     border-bottom: 0;
   }
+  .ham {
+    display: inline-block;
+    position: relative;
+    width: 23px;
+    height: 2px;
+    background-color: #242321;
+    transition: all ease .3s;
+  }
+  .ham::before, .ham::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 23px;
+    height: 2px;
+    background-color: #242321;
+    transition: all ease .3s;
+  }
+  .ham::before {
+    top: -7px;
+  }
+  .ham::after {
+    top: 7px;
+  }
+  .menu-bar.exit .ham {
+     background-color: transparent;
+  }
+  .menu-bar.exit .ham::before {
+    transform: translateY(7px) rotateZ(-45deg);
+  }
+  .menu-bar.exit .ham::after {
+    transform: translateY(-7px) rotateZ(45deg);
+  }
+
+  @media(max-width: 500px) {
+    .header__nav {
+      justify-content: flex-end;
+    }
+    .nav__list {
+      display: none;
+    }
+    .menu-bar {
+      display: flex;
+    }
+  }
+
 }
 
 .footer {
@@ -112,8 +195,7 @@ article > header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 30px;
-  min-height: calc(100% - 250px);
+  min-height: calc(100% - 210px);
 }
 
 .post, .page {

@@ -1,15 +1,27 @@
 <header class="header">
-    <h1 class="header__title">
-        <a href="/">{{ site.title }}</a>
-    </h1>
+    <div class="header-top">
+        <h1 class="header__title">
+            <a href="/">{{ site.title }}</a>
+        </h1>
 
-    <nav class="header__nav">
-        <ul class="nav__list">
-            {% for link in site.data.nav.main %}
-                <li class="nav__list-item">
-                    <a class="nav__list-link" href="{{ link.url }}">{{ link.title }}</a>
-                </li>
-            {% endfor %}
-        </ul>
-    </nav>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                {% for link in site.data.nav.main %}
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="{{ link.url }}">{{ link.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+            <a href="#" id="menu-bar" class="menu-bar">
+                <span class="ham"></span>
+            </a>
+        </nav>
+    </div>
+    <ul id="nav-list" class="nav-column__list">
+        {% for link in site.data.nav.main %}
+            <li class="nav-column__list-item">
+                <a class="nav-column__list-link" href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
 </header>
