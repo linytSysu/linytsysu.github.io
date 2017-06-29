@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Key Points about Viewport
+title: A tale of two viewports - part one
 summary: 
 tags: [viewport, html, css]
 ---
