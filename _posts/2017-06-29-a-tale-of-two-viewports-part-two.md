@@ -44,6 +44,7 @@ Meta viewport
 + **Measured in** CSS pixels
 
 1. Suppose you build a simple page and give your elements no width. Now they stretch up to take 100% of the width of the layout viewport. Most browsers zoom out to show the entire layout viewport on the screen, giving an effect like this:
+
     ![](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/29/mq_none.jpg)
 
 2. All users will immediately zoom in, which works, but most browsers keep the width of the elements intact, which makes the text hard to read.
