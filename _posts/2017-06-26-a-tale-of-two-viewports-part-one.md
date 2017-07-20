@@ -31,7 +31,9 @@ Zoom in: the opposite happens. The CSS pixels start to grow, and now one CSS pix
 ## Screen size
 `screen.width/height`:
 + **Meaning** Total size of the user’s screen.
+
 + **Measured** in Device pixels
+
 + **Browser** errors IE8 measures it in CSS pixels, in both IE7 and IE8 mode.
 
 ![screen-size](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/26/desktop_screen.jpg)
@@ -40,7 +42,9 @@ Zoom in: the opposite happens. The CSS pixels start to grow, and now one CSS pix
 ## Window size
 `window.innerWidth/Height`:
 + **Meaning** Total size of the browser window, including scrollbars.
+
 + **Measured in** CSS pixels
+
 + **Browser errors** Not supported by IE. Opera measures it in device pixels.
 
 ![window-size](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/26/desktop_inner.jpg)
@@ -48,7 +52,9 @@ Zoom in: the opposite happens. The CSS pixels start to grow, and now one CSS pix
 ## Scrolling offset
 `window.pageX/YOffset`:
 + **Meaning** Scrolling offset of the page.
+
 + **Measured in** CSS pixels
+
 + **Browser errors** None
 
 ![window-size](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/26/desktop_page.jpg)
@@ -66,7 +72,9 @@ viewport，接着，实际上等于浏览器窗口：它就是那么定义的。
 ## Measuring the viewport
 `document.documentElement.clientWidth/Height`:
 + **Meaning** Viewport dimensions
+
 + **Measured in** CSS pixels
+
 + **Browser errors** None
 
 ![window-size](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/26/desktop_client.jpg)
@@ -81,7 +89,9 @@ viewport，接着，实际上等于浏览器窗口：它就是那么定义的。
 
 ## Event coordinates
 + `pageX/Y` gives the coordinates relative to the <html> element in CSS pixels
+
 + `clientX/Y` gives the coordinates relative to the viewport in CSS pixels
+
 + `screenX/Y` gives the coordinates relative to the screen in device pixels
 
 ![window-size](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/26/desktop_pageXY.jpg)
@@ -92,6 +102,7 @@ viewport，接着，实际上等于浏览器窗口：它就是那么定义的。
 ## Media queries
 There are two relevant media queries: `width/height` and `device-width/device-height`:
 1. `width/height` uses the same values as `documentElement.clientWidth/Height` (the viewport, in other words). It works with CSS pixels.
+
 2. `device-width/device-height` uses the same values as `screen.width/height` (the screen, in other words). It works with device pixels.
 
 ![window-size](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/26/desktop_mediaqueries.jpg)

@@ -233,10 +233,14 @@ Hello World
 
 ### 参考资料
 
-+ [docker: installation on ubuntu](https://docs.docker.com/v1.8/installation/ubuntulinux/) 
++ [docker: installation on ubuntu](https://docs.docker.com/v1.8/installation/ubuntulinux/)
+
 + [docker安装node](http://www.widuu.com/docker/node.html)
+
 + [如何制作一个定制的 Python 基础 Docker 镜像](http://docs.daocloud.io/python-docker/python-docker-002)
+
 + [Docker 笔记 打造node.js开发环境 安装nvm](https://www.ijser.cn/install-nvm-on-docker/)
+
 + [nodejs镜像示例](http://open.taobao.com/doc2/detail.htm?spm=a219a.7629140.0.0.y8BYmT&treeId=12&articleId=104187&docType=1)
 
 

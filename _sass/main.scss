@@ -128,6 +128,8 @@ article > header {
     height: 2px;
     background-color: #242321;
     transition: all ease .3s;
+    border-top: 7px solid #FFFFFF;
+    border-bottom: 7px solid #FFFFFF;
   }
   .ham::before, .ham::after {
     content: '';

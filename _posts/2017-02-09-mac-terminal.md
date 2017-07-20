@@ -80,7 +80,9 @@ PS1='\[\e[0;33m\]\u\[\e[0m\]@\[\e[0;32m\]\h\[\e[0m\]:\[\e[0;34m\]\w\[\e[0m\]\$ '
 ## 4. 使用theme
 
 想要拥有更好的终端配色方案的话，可以使用网络上流行的专门配色方案：
+
 + [GitHub - chriskempson/tomorrow-theme: Tomorrow Theme the precursor to Base16 Theme](https://github.com/chriskempson/tomorrow-theme)
+
 + [GitHub - altercation/solarized: precision color scheme for multiple applications (terminal, vim, etc.) with both dark/light modes](https://github.com/altercation/solarized)
 
 以`Tomorrow Theme`为例，将GitHub仓库拷贝下来后，进入相应目录，能够很多针对不同终端货编辑器的文件夹。进入`OS X Terminal`目录后，双击	`.terminal`文件就能够将主题导入Terminal中了。然后设置该主题为默认主题即可。
@@ -102,13 +104,21 @@ PS1="\[\e[0;33m\]\u\[\e[0m\]@\[\e[0;32m\]\h\[\e[0m\]:\[\e[0;34m\]\w\[\e[0m\]\[\0
 
 ## Links
 + [Mac Terminal 使Mac Terminal有顏色(Prompt與ls) - Eason’s Garage](http://koko.ntex.tw/wordpress/mac-terminal-bash-color/)
+
 + https://geoff.greer.fm/lscolors/
+
 + [开发工具颜色搭配 —— 折腾 mac 系统 - 腾讯Web前端 IMWeb 团队社区](http://imweb.io/topic/55fe849171a0b7636f0c2f90)
+
 + [終端機 iTerm2 及設定 bash_profile](https://zlargon.github.io/blog/MAC/tools/mac-terminal/)
+
 + [让Mac OS X的终端多姿多彩 - linfan’s blog](http://linfan.info/blog/2012/02/27/colorful-terminal-in-mac/)
+
 + https://mfitzp.io/article/add-git-branch-name-to-terminal-prompt-mac/
+
 + [GitHub - chriskempson/tomorrow-theme: Tomorrow Theme the precursor to Base16 Theme](https://github.com/chriskempson/tomorrow-theme)
+
 + [GitHub - altercation/solarized: precision color scheme for multiple applications (terminal, vim, etc.) with both dark/light modes](https://github.com/altercation/solarized)
+
 + [GitHub - jimeh/git-aware-prompt: Display current Git branch name in your terminal prompt when in a Git working directory.](https://github.com/jimeh/git-aware-prompt)
 
 

@@ -131,8 +131,11 @@ function ExpandableForm({ onExpand, expanded = false, children }) {
 // Wrap the component instead of decorating it
 export default observer(ExpandableForm)
 ```
+
 + 我们的组件是一个函数，它的Props作为其参数
+
 + 避免使用以下ES6语法: `const ExpandableForm = ({ onExpand, expanded, children }) => {` 如果你的Babel设置正确，这个名字的缺失不会成为一个问题：但如果不是，任何错误将<<anonymous>>中显示，对调试而言，是一个非常严重的问题
+
 + 因为你不能使用装饰器和功能组件，你只需将函数作为参数传递给它
 
 ## JSX条件

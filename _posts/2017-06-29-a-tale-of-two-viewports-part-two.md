@@ -31,16 +31,19 @@ Thus the width and the height of the layout viewport are equal to whatever can b
 ## Measuring the layout viewport
 `document.documentElement.clientWidth/Height`:
 + **Meaning** Layout viewport dimensions
+
 + **Measured in** CSS pixels
 
 ## Measuring the visual viewport
 `window.innerWidth/Height`:
 + **Meaning** Visual viewport dimensions
+
 + **Measured in** CSS pixels
 
 ## Meta viewport
 Meta viewport
 + **Meaning** Set the layout viewport’s width.
+
 + **Measured in** CSS pixels
 
 1. Suppose you build a simple page and give your elements no width. Now they stretch up to take 100% of the width of the layout viewport. Most browsers zoom out to show the entire layout viewport on the screen, giving an effect like this:
