@@ -13,27 +13,27 @@ $$ h_\theta(x_1, x_2, \ldots, x_n) = \theta_0 + \theta_1 x_1 + \ldots + \theta_n
 
 add $$ x_0 = 1 $$,
 
-$$ h_\theta(x_1, x_2, \ldots, x_n) = \theta_0 x_0 + \theta_1 x_1 + \ldots + \theta_n x_n $$
+$$ h_\theta(x_0, x_1, \ldots, x_n) = \theta_0 x_0 + \theta_1 x_1 + \ldots + \theta_n x_n $$
 
 Loss function:
 
-$$ J(\theta_0, \theta_1, \ldots, \theta_n) = \frac{1}{2m} \sum\limits_{j=0}^n(h_\theta(x_0^{(j)}, x_1^{(j)}, \ldots, x_n^{(j)}) - y_j)^2 $$
+$$ J(\theta) = \frac{1}{2m} \sum\limits_{i=1}^m(h_\theta(x_i) - y_i)^2 $$
 
-Gradient(partial derivative of $$ \theta_i $$):
+Gradient(partial derivative of $$ \theta_j $$):
 
-$$ \frac{\partial}{\partial\theta_i}J(\theta_0, \theta_1, \ldots , \theta_n) $$
+$$ \frac{\partial}{\partial\theta_j}J(\theta) $$
 
 Gradient descent:
 
-$$ \theta_i = \theta_i - \alpha\frac{\partial}{\partial\theta_i}J(\theta_0, \theta_1, \ldots, \theta_n) $$
+$$ \theta_j = \theta_j - \alpha\frac{\partial}{\partial\theta_j}J(\theta) $$
 
-Calculate gradient(calculate partial derivative of $$ \theta_i $$):
+Calculate gradient(calculate partial derivative of $$ \theta_j $$):
 
-$$ \frac{\partial}{\partial\theta_i}J(\theta_0, \theta_1..., \theta_n)= \frac{1}{m}\sum\limits_{j=0}^{m}(h_\theta(x_0^{(j)}, x_1^{(j)}, \ldots, x_n^{(j)}) - y_j)x_i^{(j)} $$
+$$ \frac{\partial}{\partial\theta_j}J(\theta)= \frac{1}{m}\sum\limits_{i=1}^{m}(h_\theta(x_i) - y_i)x_i^{j} $$
 
 Calculate the $$ \theta $$:
 
-$$ \theta_i = \theta_i - \alpha\frac{1}{m}\sum\limits_{j=0}^{m}(h_\theta(x_0^{(j)}, x_1^{(j)}, \ldots, x_n^{(j)}) - y_j)x_i^{(j)} $$
+$$ \theta_j = \theta_j - \alpha\frac{1}{m}\sum\limits_{i=1}^{m}(h_\theta(x_i) - y_i)x_i^{j} $$
 
 ## Code
 
