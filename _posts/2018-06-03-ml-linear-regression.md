@@ -17,23 +17,23 @@ $$ h_\theta(x_0, x_1, \ldots, x_n) = \theta_0 x_0 + \theta_1 x_1 + \ldots + \the
 
 Loss function:
 
-$$ J(\theta) = \frac{1}{2m} \sum\limits_{i=1}^m(h_\theta(x_i) - y_i)^2 $$
+$$ J(\theta) = \frac{1}{2m} \sum\limits_{j=1}^m(h_\theta(\boldsymbol{x}_j) - y_j)^2 $$
 
 Gradient(partial derivative of $$ \theta_j $$):
 
-$$ \frac{\partial}{\partial\theta_j}J(\theta) $$
+$$ \frac{\partial}{\partial\theta_i}J(\theta) $$
 
 Gradient descent:
 
-$$ \theta_j = \theta_j - \alpha\frac{\partial}{\partial\theta_j}J(\theta) $$
+$$ \theta_i = \theta_i - \alpha\frac{\partial}{\partial\theta_i}J(\theta) $$
 
-Calculate gradient(calculate partial derivative of $$ \theta_j $$):
+Calculate gradient(calculate partial derivative of $$ \theta_i $$):
 
-$$ \frac{\partial}{\partial\theta_j}J(\theta)= \frac{1}{m}\sum\limits_{i=1}^{m}(h_\theta(x_i) - y_i)x_i^{j} $$
+$$ \frac{\partial}{\partial\theta_i}J(\theta)= \frac{1}{m}\sum\limits_{i=1}^{m}(h_\theta(\boldsymbol{x}_j) - y_j)x_i^{j} $$
 
 Calculate the $$ \theta $$:
 
-$$ \theta_j = \theta_j - \alpha\frac{1}{m}\sum\limits_{i=1}^{m}(h_\theta(x_i) - y_i)x_i^{j} $$
+$$ \theta_i = \theta_i - \alpha\frac{1}{m}\sum\limits_{j=1}^{m}(h_\theta(\boldsymbol{x}_j) - y_j)x_i^{j} $$
 
 ## Code
 

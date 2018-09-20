@@ -17,33 +17,33 @@ $$ g'(z) = g(z)(1-g(z)) $$
 
 Logistic regression:
 
-$$ h_{\theta}(x) = \frac{1}{1 + e^{-\theta^{T} x}} $$
+$$ h_{\theta}(\boldsymbol{x}) = \frac{1}{1 + e^{-\theta^{T} \boldsymbol{x}}} $$
 
 for label 1 and label 0:
 
-$$ P(y=1 | x,\theta) = h_\theta(x) $$
+$$ P(y=1 | \boldsymbol{x},\theta) = h_\theta(\boldsymbol{x}) $$
 
-$$ P(y=0 | x,\theta) = 1 - h_\theta(x) $$
+$$ P(y=0 | \boldsymbol{x},\theta) = 1 - h_\theta(\boldsymbol{x}) $$
 
 that is:
 
-$$ P(y | x,\theta) = h_\theta(x)^y(1 - h_\theta(x))^{1-y} $$
+$$ P(y | \boldsymbol{x},\theta) = h_\theta(\boldsymbol{x})^y(1 - h_\theta(\boldsymbol{x}))^{1-y} $$
 
 Loss function:
 
-$$ J(\theta) = -\frac{1}{m}\left[ \sum\limits_{j=1}^m y_i \log h_\theta(x_i)+ (1 - y_i)\log(1 - h_\theta(x_i)) \right]$$
+$$ J(\theta) = -\frac{1}{m}\left[ \sum\limits_{j=1}^m y_j \log h_\theta(\boldsymbol{x}_j)+ (1 - y_j)\log(1 - h_\theta(\boldsymbol{x}_j)) \right]$$
 
 Gradient descent:
 
-$$ \theta_j = \theta_j - \alpha\frac{\partial}{\partial\theta_j}J(\theta) $$
+$$ \theta_i = \theta_i - \alpha\frac{\partial}{\partial\theta_i}J(\theta) $$
 
-Calculate gradient(calculate partial derivative of $$ \theta_j $$):
+Calculate gradient(calculate partial derivative of $$ \theta_i $$):
 
-$$ \frac{\partial}{\partial\theta_j}J(\theta) = \frac{1}{m}\sum\limits_{i=1}^m(h_\theta(x_i) - y_i)x_i^{j} $$
+$$ \frac{\partial}{\partial\theta_i}J(\theta) = \frac{1}{m}\sum\limits_{j=1}^m(h_\theta(\boldsymbol{x}_j) - y_j)x_i^{j} $$
 
 Calculate the $$ \theta $$:
 
-$$ \theta_j = \theta_j - \alpha\frac{1}{m}\sum\limits_{i=1}^m(h_\theta(x_i) - y_i)x_i^{j} $$
+$$ \theta_i = \theta_i - \alpha\frac{1}{m}\sum\limits_{j=1}^m(h_\theta(\boldsymbol{x}_j) - y_j)x_i^{j} $$
 
 ### Code
 
