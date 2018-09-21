@@ -29,7 +29,7 @@ $$ \theta_i = \theta_i - \alpha\frac{\partial}{\partial\theta_i}J(\theta) $$
 
 Calculate gradient(calculate partial derivative of $$ \theta_i $$):
 
-$$ \frac{\partial}{\partial\theta_i}J(\theta)= \frac{1}{m}\sum\limits_{i=1}^{m}(h_\theta(\boldsymbol{x}_j) - y_j)x_i^{j} $$
+$$ \frac{\partial}{\partial\theta_i}J(\theta)= \frac{1}{m}\sum\limits_{j=1}^{m}(h_\theta(\boldsymbol{x}_j) - y_j)x_i^{j} $$
 
 Calculate the $$ \theta $$:
 
