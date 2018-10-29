@@ -19,7 +19,7 @@ Loss function:
 
 $$ J(\theta) = \frac{1}{2m} \sum\limits_{j=1}^m(h_\theta(\boldsymbol{x}_j) - y_j)^2 $$
 
-Gradient(partial derivative of $$ \theta_j $$):
+Gradient(partial derivative of $$ \theta_i $$):
 
 $$ \frac{\partial}{\partial\theta_i}J(\theta) $$
 
