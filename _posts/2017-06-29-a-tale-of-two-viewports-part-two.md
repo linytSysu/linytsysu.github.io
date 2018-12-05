@@ -22,11 +22,11 @@ Browsers have chosen their dimensions of the layout viewport such that it comple
 为了理解layout viewport的尺寸，我们不得不看一下当页面被完全缩小后会发生什么。许多移动浏览器会在初始情况下以完全缩小的模式来展示任何页面。
 重点是：浏览器已经为自己的layout viewport选择了尺寸，这样的话它在完全缩小模式的情况下完整的覆盖了屏幕（并且等于visual viewport）。
 
-![](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/29/mobile_viewportzoomedout.jpg)
+![](http://cdn.linyt.xyz/linytsysu/github/io/2017/06/29/mobile_viewportzoomedout.jpg)
 
 Thus the width and the height of the layout viewport are equal to whatever can be shown on the screen in the maximally zoomed-out mode. When the user zooms in these dimensions stay the same.
 
-![](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/29/mobile_layoutviewport.jpg)
+![](http://cdn.linyt.xyz/linytsysu/github/io/2017/06/29/mobile_layoutviewport.jpg)
 
 ## Measuring the layout viewport
 `document.documentElement.clientWidth/Height`:
@@ -48,16 +48,16 @@ Meta viewport
 
 1. Suppose you build a simple page and give your elements no width. Now they stretch up to take 100% of the width of the layout viewport. Most browsers zoom out to show the entire layout viewport on the screen, giving an effect like this:
 
-    ![](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/29/mq_none.jpg)
+    ![](http://cdn.linyt.xyz/linytsysu/github/io/2017/06/29/mq_none.jpg)
 
 2. All users will immediately zoom in, which works, but most browsers keep the width of the elements intact, which makes the text hard to read.
 
-    ![](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/29/mq_none_zoomed.jpg)
+    ![](http://cdn.linyt.xyz/linytsysu/github/io/2017/06/29/mq_none_zoomed.jpg)
 
 3. Now what you could try is setting html {width: 320px}. Now the <html> element shrinks, and with it all other elements, which now take 100% of 320px. This works when the user zooms in, but not initially, when the user is confronted with a zoomed-out page that mostly contains nothing.
 
-    ![](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/29/mq_html300.jpg)
+    ![](http://cdn.linyt.xyz/linytsysu/github/io/2017/06/29/mq_html300.jpg)
 
 4. It is in order to get around this problem that Apple invented the meta viewport tag. When you set `<meta name="viewport" content="width=320">` you set the width of the layout viewport to 320px. Now the initial state of the page is also correct.
 
-    ![](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/29/mq_yes.jpg)
+    ![](http://cdn.linyt.xyz/linytsysu/github/io/2017/06/29/mq_yes.jpg)

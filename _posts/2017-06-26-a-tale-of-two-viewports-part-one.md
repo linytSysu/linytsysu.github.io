@@ -17,16 +17,16 @@ Zooming as implemented in modern browsers consists of nothing more than “stret
 
 Four pixels on 100% zoom level: CSS pixels fully overlap with device pixels
 
-![100%-zoom-level](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/26/csspixels_100.gif)
+![100%-zoom-level](http://cdn.linyt.xyz/linytsysu/github/io/2017/06/26/csspixels_100.gif)
 
 Zoom out: The CSS pixels start to shrink, meaning that one device pixel now overlaps several CSS pixels.
 
-![zoom-in](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/26/csspixels_out.gif)
+![zoom-in](http://cdn.linyt.xyz/linytsysu/github/io/2017/06/26/csspixels_out.gif)
 
 Zoom in: the opposite happens. The CSS pixels start to grow, and now one CSS pixels overlaps several device pixels
 100% zoom: At zoom level 100% one CSS pixel is exactly equal to one device pixel.
 
-![zoom-out](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/26/csspixels_in.gif)
+![zoom-out](http://cdn.linyt.xyz/linytsysu/github/io/2017/06/26/csspixels_in.gif)
 
 ## Screen size
 `screen.width/height`:
@@ -36,7 +36,7 @@ Zoom in: the opposite happens. The CSS pixels start to grow, and now one CSS pix
 
 + **Browser** errors IE8 measures it in CSS pixels, in both IE7 and IE8 mode.
 
-![screen-size](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/26/desktop_screen.jpg)
+![screen-size](http://cdn.linyt.xyz/linytsysu/github/io/2017/06/26/desktop_screen.jpg)
 
 
 ## Window size
@@ -47,7 +47,7 @@ Zoom in: the opposite happens. The CSS pixels start to grow, and now one CSS pix
 
 + **Browser errors** Not supported by IE. Opera measures it in device pixels.
 
-![window-size](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/26/desktop_inner.jpg)
+![window-size](http://cdn.linyt.xyz/linytsysu/github/io/2017/06/26/desktop_inner.jpg)
 
 ## Scrolling offset
 `window.pageX/YOffset`:
@@ -57,7 +57,7 @@ Zoom in: the opposite happens. The CSS pixels start to grow, and now one CSS pix
 
 + **Browser errors** None
 
-![window-size](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/26/desktop_page.jpg)
+![window-size](http://cdn.linyt.xyz/linytsysu/github/io/2017/06/26/desktop_page.jpg)
 
 
 ## Concept: the viewport
@@ -77,7 +77,7 @@ viewport，接着，实际上等于浏览器窗口：它就是那么定义的。
 
 + **Browser errors** None
 
-![window-size](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/26/desktop_client.jpg)
+![window-size](http://cdn.linyt.xyz/linytsysu/github/io/2017/06/26/desktop_client.jpg)
 
 ## Measuring the `<html>` element
 `document.documentElement.offsetWidth/Height`:
@@ -85,7 +85,7 @@ viewport，接着，实际上等于浏览器窗口：它就是那么定义的。
 + **Measured in** CSS pixels
 + **Browser errors** IE measures the viewport, and not the <html> element.
 
-![window-size](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/26/desktop_offset.jpg)
+![window-size](http://cdn.linyt.xyz/linytsysu/github/io/2017/06/26/desktop_offset.jpg)
 
 ## Event coordinates
 + `pageX/Y` gives the coordinates relative to the <html> element in CSS pixels
@@ -94,9 +94,9 @@ viewport，接着，实际上等于浏览器窗口：它就是那么定义的。
 
 + `screenX/Y` gives the coordinates relative to the screen in device pixels
 
-![window-size](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/26/desktop_pageXY.jpg)
-![window-size](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/26/desktop_clientXY.jpg)
-![window-size](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/26/desktop_screenXY.jpg)
+![window-size](http://cdn.linyt.xyz/linytsysu/github/io/2017/06/26/desktop_pageXY.jpg)
+![window-size](http://cdn.linyt.xyz/linytsysu/github/io/2017/06/26/desktop_clientXY.jpg)
+![window-size](http://cdn.linyt.xyz/linytsysu/github/io/2017/06/26/desktop_screenXY.jpg)
 
 
 ## Media queries
@@ -105,4 +105,4 @@ There are two relevant media queries: `width/height` and `device-width/device-he
 
 2. `device-width/device-height` uses the same values as `screen.width/height` (the screen, in other words). It works with device pixels.
 
-![window-size](http://7u2fpc.com1.z0.glb.clouddn.com/linytsysu/github/io/2017/06/26/desktop_mediaqueries.jpg)
+![window-size](http://cdn.linyt.xyz/linytsysu/github/io/2017/06/26/desktop_mediaqueries.jpg)
